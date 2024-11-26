@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+   background-image:url('pic1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment:fixed;
+    font-size: 18px;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+a{
+    color: #0f141e;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-auto-rows: minmax(50px, auto);
+    opacity: 0.8;
+  }
+.item {
+    background-color: #c2cad0; 
+padding: 10px;
+border: 5px;
+border-radius: 20px;
+margin: 2%;
+place-items: center;
+}
+.item0 {
+    grid-column: span 3;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  
+}
+.table tr:nth-child(odd){
+background: #bcc2c7;
+}
+.table2 tr:nth-child(odd){
+    background: #bcc2c7; 
+}
+.list {
+    list-style-type: lower-greek;
+}
+.list1{
+    list-style-type: upper-roman ;
+}
+.list2{
+    list-style-type: none;
+}
+.table1 tr:nth-child(2), .table1 tr:nth-child(4){
+    background: #bcc2c7;
+}
+.item10 {
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-bottom: 100px;
+    margin-top: 45px;
+    width: 500px;
+    height: 250px;
+    }
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    
+    
+ }
+   
+
+.modal-content{
+  position: relative;
+    max-width: 600px;
+    background-color: aliceblue;
+    margin: auto;
+    color: #0f141e;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 30px;
+    cursor: default;
+  
+}
+.modal-close{
+   background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: black;
+   float: right;
+ 
+} 
